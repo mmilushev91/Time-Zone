@@ -1,0 +1,86 @@
+/*Global Resets*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*General styles*/
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+nav {
+  height: 15vh;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: black;
+  font-weight: 400;
+ 
+}
+
+nav a:hover {
+  color: #dc3545;
+}
+
+/*Navigation*/
+
+.nav-links, .nav-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-links {
+  flex-basis: 40%;
+}
+
+.nav-icons {
+  flex-basis: 5%;
+}
+
+.nav-links li {
+  margin-bottom: 10px;
+}
+
+.latest-dropdown {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  border-top: 2px solid red;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0, 0.3);
+}
+
+.latest:hover .latest-dropdown {
+  display: block;
+}
+
+.latest::after {
+  content: "HOT";
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  font-size: 8px;
+  padding: 5px 8px;
+  position: absolute;
+  top: 15px;
+  text-align: center;
+}
+
+
+
